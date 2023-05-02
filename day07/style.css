@@ -1,0 +1,53 @@
+@charset "UTF-8";
+html{
+    font-family: "Open Sans";
+    font-size: 100%;
+}
+
+body{
+    color: #555;
+    font-family: sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.title{
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.container{
+    /* 스크롤스냅 */
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+    height: 100vh;
+}
+.area:nth-child(even){
+    background-color: #ffd1da;
+}
+.area:nth-child(odd){
+    background-color: #fff3d1;
+}
+
+/* 모바일 사이즈 */
+@media (max-width:576px){
+    .title{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+

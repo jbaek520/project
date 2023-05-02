@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="">
+        <div>
+        <label for="first">이름</label>
+        <input type="text" id="first" name="firstname">
+        <label for="Last">성</label>
+        <input type="text" id="last" name="lastname">
+        </div>
+
+        <h3>레벨 선택</h3>
+        <div>
+            <input type="radio" name="course" id="basic">
+            <label for="basic">초급</label>
+        </div>
+        <div>    
+            <input type="radio" name="course" id="middle">
+            <label for="middle">중급</label>
+        </div>
+        <div>
+            <input type="radio" name="course" id="expert">
+            <label for="expert">상급</label>
+        </div>
+
+        <h3>계정 생성</h3>
+        <div>
+            <label for="email">이메일</label>        
+            <input type="email" name="email" id="email" required>
+            <label for="password">패스워드</label>        
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <h3>관심 분야 선택</h3>
+        <div>
+            <label for="division">관심분야</label >
+            <select name="division" id="division">
+                <option value="it">IT</option>
+                <option value="artandculture">문화예술</option>
+                <option value="education">교육</option>
+                <option value="government">정부</option >
+            </select>
+
+        </div>
+        <br>
+        <button>가입하기</button>
+
+
+
+    </form>
+</body>
+</html>

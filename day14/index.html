@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebConf</title>
+
+    <link rel="icon" href="./images/favicon.svg">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="#hero" class="logo">WebConf</a>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#speakers">speakers</a></li>
+                <li><a href="#ticket">ticket</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="wrapper">
+            <h1>WebConf ASIA</h1>
+            <p class="hero-date">2023.03.15 11:00 - 3:00 KST</p>
+            <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum blanditiis omnis incidunt voluptatem doloremque? Vero optio repellat, odio laborum culpa temporibus ex aut in non corrupti magnam, vel commodi?
+            </P>
+        </div>
+    </section>
+
+    <section id="about" class="wrapper">
+        <h2>ABOUT</h2>
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Sint at quasi deserunt quas, laboriosam ad eveniet numquam, 
+            laudantium, quam tenetur ducimus earum mollitia? 
+            Iste fugit amet labore est nobis saepe?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Sint at quasi deserunt quas, laboriosam ad eveniet numquam, 
+            laudantium, quam tenetur ducimus earum mollitia? 
+            Iste fugit amet labore est nobis saepe?
+        </P>
+        <img src="./images/computer.jpg" alt="컴퓨터">
+
+    </section>
+
+    <section id="news">
+        <h2>NEWS</h2>
+        <div class="wrapper">
+            <table class="news-table">
+                <tr>
+                    <td class="news-date">2023.03.15</td>
+                    <td class="news-content">참가 신청을 시작합니다.</td>
+                </tr>
+                <tr>
+                    <td class="news-date">2023.03.11</td>
+                    <td class="news-content">발표자가 결정 되었습니다.</td>
+                </tr>
+                <tr>
+                    <td class="news-date">2023.03.09</td>
+                    <td class="news-content">웹사이트가 리뉴얼 되었습니다.</td>
+                </tr>
+                <tr>
+                    <td class="news-date">2023.02.15</td>
+                    <td class="news-content">개최 결정</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="speakers" class="wrapper">
+        <h2>SPEAKERS</h2>
+        <div class="speakers-list">
+            <div class="speakers-text">
+                <h3>Kim Jongsun</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, enim eaque ducimus incidunt perferendis optio, quam laboriosam id ratione perspiciatis illum atque debitis ad? Facere aut cumque mollitia blanditiis id?</p>
+            </div>
+            <img src="./images/speaker1.jpg" alt="Kim Jongsun">
+        </div>
+        <div class="speakers-list">
+            <div class="speakers-text">
+                <h3>Kwon Hyunksoo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, enim eaque ducimus incidunt perferendis optio, quam laboriosam id ratione perspiciatis illum atque debitis ad? Facere aut cumque mollitia blanditiis id?</p>
+            </div>
+            <img src="./images/speaker2.jpg" alt="Kown Hyunksoo">
+        </div>
+    </section>
+
+    <section id="ticket">
+        <h2>TICKET</h2>
+        <form action="#" class="ticket-form">
+            <label>Name</label>
+            <input type="text" class="ticket-field" placeholder="예: 김OO"/>
+            <label>Email</label>
+            <input type="email" class="ticket-field" placeholder="예: hello@example.com"/>
+            <input type="submit" class="ticket-btn" value="join now!"/>
+        </form>
+
+    <div class="footer wrapper">
+        <p>
+            <a href="mailto:info@example.com">문의사항</a>
+            <small>&copy; 2023 WebConf </small>
+            <!-- &copy; 는 카피 라이트 마크가 나옴
+            &nbsp 임시 띄어쓰기 작성 -->
+        </p>
+    </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+img{
+    width: 30%;
+    /* margin: 1.66666%; */
+    margin: calc(10% / 6)
+
+}
+
+nav{
+    font-family: "Noto Sans Mono", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #999;
+    width: 30%;
+    margin: 5px calc(10% / 6);
+    padding: 1em 0;
+}
+
+.logo-img{
+    width: 100px;
+    transform: translateX(-15px) translateY(10px);
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        display: none;
+    }
+}

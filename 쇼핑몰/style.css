@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* GENERAL */
+html {
+  font-size: 100%;
+}
+body {
+  color: #555;
+  font-family: sans-serif;
+}
+
+/* COMMON */
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+p {
+  line-height: 1.7;
+  font-size: 1.25rem;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* COSMETICS */
+.cosmetics {
+  background-image: url(../과제-쇼핑몰/images/cosmetics1.jpeg);
+  text-align: center;
+  padding-top: 40vh;
+}
+
+/* PRODUCTS */
+.products {
+  background-image: url(../과제-쇼핑몰/images/cosmetics2.jpeg);
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.products-list tr {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.products-list th {
+  font-weight: normal;
+}
+.products-list td {
+  padding-left: 1rem;
+}
+
+/* CONTACT */
+.contact{
+    background-image: url(../과제-쇼핑몰/images/cosmetics3.jpeg);
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.btn{
+    background: #555;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.75rem 2.25rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+
+.btn:hover{
+    background: #777;
+}
+
+.contact-sns{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-sns a{
+    background: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 0.75rem 0 0 0.125rem;
+    color: #555;
+}
+
+.contact-sns a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Size */
+
+@media (max-width: 576px){
+    .title{
+        font-size: 4rem;
+    }
+    p{
+        padding: 0 1rem;
+    }
+    p,.menu-list li{
+        font-size: 1rem;
+    }
+    .cosmetics{
+        padding: auto;
+    }
+    .wrapper{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact{
+        text-align: center;
+        padding-top: 20vh;
+    }
+}
