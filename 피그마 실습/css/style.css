@@ -1,0 +1,334 @@
+body{
+  width: 95%;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* 실습 1 */
+
+nav{
+  background-color: #273C72;
+}
+
+nav .main-nav{
+  width: 1440px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul.menu{
+  display: flex;
+}
+
+nav ul.menu > li{
+  display: flex;
+  position: relative;
+}
+
+nav ul.menu > li > a{
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+nav ul.menu > li > a:hover{
+  opacity: 0.8;
+}
+
+/* 실습 2 */
+header .inner{
+  background-color: #e8eeff;
+}
+header .sec-nav{
+  max-width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+header .sec-nav > h4{
+  font-size: 12px;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1; 
+  cursor: pointer;
+}
+header .sec-nav ul.menu2{
+  display: flex;
+  align-items: center;
+}
+header .sec-nav ul.menu2 > li{
+  position: relative;
+}
+header .sec-nav ul.menu2 > li::before{
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sec-nav ul.menu2 > li:first-child::before{
+  display: none;
+}
+header .sec-nav ul.menu2 > li > a{
+  color: #000;
+  padding: 19px 40px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  opacity: 1;
+}
+header .sec-nav ul.menu2 > li > a:hover{
+  opacity: 0.7;
+}
+
+/* 실습3 */
+
+.container{
+  background-color: #F9FFE9;
+}
+
+.nav{
+  max-width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav > .logo{
+  width: 22px;
+  height: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto 20px;
+  flex-grow: 4;
+}
+.nav-menu{
+  display: flex;
+}
+.nav-menu ul.menu3{
+  display: flex;
+}
+
+.nav-menu ul.menu3 li{
+  position: relative;
+}
+.nav-menu ul.menu3 > li > a{
+  color: #000;
+  padding: 19px 40px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+.nav-menu ul.menu3 > li > a:hover{
+  text-decoration: underline 1.5px;
+}
+
+.nav .search{
+  display: flex;
+  align-items: center;
+}
+.nav .search input{
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+}
+.nav .search input:focus{
+  width: 200px;
+  border-color: #ffbd60;
+}
+.nav .search .material-icons{
+  height: 24px;
+  padding: 5px;
+  display: flex;
+}
+
+
+/* 버튼1 */
+.btn1{
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid #7451C0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn1 img{
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+
+/* 버튼2 */
+.btn2{
+  width: 120px;
+  height: 50px;
+  background-color: #7451C0;
+  border: 2px solid #7451C0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.btn2 img{
+  align-items: center;
+  justify-content: center;
+}
+.btn2:hover{
+  background-color: #A67CFF;
+  border: 2px solid #A67CFF;
+  border-radius: 25px;
+}
+
+/* 버튼3 */
+
+.toggle{
+  display: flex;
+}
+.box1,
+.box2,
+.box3,
+.box4{
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.box1{
+  background-color: #A67CFF;
+  cursor: pointer;
+}
+.toggle-inner{
+  display: none;
+}
+.box2,
+.box3,
+.box4{
+  background-color: #7451C0;
+}
+.toggle>.box1:hover + .toggle-inner{
+  display: flex;
+}
+
+/* 버튼4 */
+.toggle1{
+  display: block;
+}
+.box5,
+.box6,
+.box7,
+.box8{
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+.box5{
+  background-color: #A67CFF;
+}
+.toggle1-inner{
+  display: none;
+}
+.box6,
+.box7,
+.box8{
+  background-color: #7451C0;
+}
+.toggle1>.box5:hover + .toggle1-inner{
+  display: block;
+}
+
+/* 공인인증서 로그인 */
+.notice-box{
+  width: 500px;
+  height: 190px;
+  border: 0.5px solid #666;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+#img{
+  margin: 50px 5px;
+}
+.text-group{
+  margin: 10px 20px;
+}
+#text1{
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: left;
+  margin: 45px 0 5px 0;
+}
+#text2{
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+.mini-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+#text3{
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 0.75rem;
+  color: #A67CFF;
+}
+.icon{
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+}
+.notice-btn{
+  width: 100px;
+  height: 80px;
+  background-color: #7451C0;
+  border: none;
+  border-radius: 2px;
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin: auto 0;
+  cursor: pointer;
+}

@@ -1,0 +1,172 @@
+body{
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a.home-btn{
+  text-decoration: none;
+  display: flex;
+  margin: 10px 10px;
+  color: #000;
+}
+
+.inner{
+  max-width: 510px;
+  max-height: 700px;
+  padding: 60px 30px;
+  margin: 0 auto;
+}
+
+.inner-top{
+  max-width: 510px;
+  font-family: 'Exo 2', 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+}
+.inner-top h2{
+  font-size: 46px;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.inner-top .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-top .menu h4{
+  width: 182px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 10px;
+  padding: 0 0 14px;
+  border-bottom: 2px solid #dcdcdc;
+  cursor: pointer;
+}
+.inner-top .menu h4:hover{
+  border-color: #326aff;
+  color: #326aff;
+}
+
+.inner-bottom{
+  font-family: 'Exo 2', 'Noto Sans KR', sans-serif;
+  background-color: #f7f7f7;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.inner-bottom .inner-info{
+  max-width: 365px;
+  margin: auto auto;
+}
+.inner-bottom .inner-info .login{
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+}
+.inner-bottom .inner-info .login input{
+  background-color: #fff;
+  border-radius: 33px;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 100%;
+  height: 65px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.inner-bottom .inner-info .save{
+  width: 100%;
+  height: 24px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+.inner-bottom .inner-info .save label{
+  color: #93989d;
+  font-size: 14px;
+  padding-right: 25px;
+}
+.inner-bottom .inner-info .save input[type="checkbox"]:checked + label {
+  color: #000;
+  font-weight: bold;
+}
+
+.inner-bottom .inner-info .btn{
+  width: 365px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+.inner-bottom .inner-info .btn .btn-login{
+  width: 100%;
+  height: 65px;
+  background-color: #326aff;
+  color: #fff;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500px;
+  text-decoration: none;
+  border: none;
+  border-radius: 33px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: block;
+}
+.inner-bottom .inner-info .btn .btn-signin{
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  color: #326aff;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500px;
+  border: 2px solid #326aff;
+  border-radius: 33px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inner-bottom .inner-info .find{
+  width: 100%;
+  height: 24px;
+  margin-top: 20px;
+}
+.inner-bottom .inner-info .find ul.find-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-bottom .inner-info .find ul.find-menu > li{
+  position: relative;
+}
+.inner-bottom .inner-info .find ul.find-menu > li::before{
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #84888d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.inner-bottom .inner-info .find ul.find-menu > li:first-child:before{
+  display: none;
+}
+.inner-bottom .inner-info .find ul.find-menu > li > a{
+  color: #84888d;
+  font-size: 15px;
+  padding: 10px 16px;
+}
